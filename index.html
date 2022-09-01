@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discourage_#9987</title>
+    <meta property="og:title" content="discourage_#9987">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sun6-20.userapi.com/s/v1/ig2/655SIOxegmF9-3Lnuz3N0m-VUSSCpMsZIxeyl2sQ2cEcEAsbbv8zGG7xsaz9rzMNJhBsRBdklEX5s5WFbFrrGeyV.jpg?size=200x200&quality=95&crop=68,7,450,450&ava=1">
+    <meta property="og:image:width" content="100">
+    <meta property="og:image:height" content="100">
+    <meta property="og:description" content="I am happy and content with you.">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@18657a9/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./styles/root.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/index.page.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" type="text/javascript"></script>
+    <script src="./javascript/anime.wrapper.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="warning">
+        <h1>Warning <i class="fa-solid fa-triangle-exclamation"></i></h1>
+        <p>This site has a video background that has a lot of flashing. If you have <strong>epilepsy</strong>, <strong>immediately pause the video</strong> in the bottom left!</p>
+        <button onclick="ns['closeWarning']();"><i class="fa-solid fa-square-check"></i> Proceed</button>
+    </div>
+    <main>
+        <nav>
+            <button id="extend_nav" onclick="ns['toggleNav']();">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <p><span>Hello!</span> My name is discourage_, I'm ________ living in the United States. I always look forward to learning something new and improving what I currently have. I currently work on web development and plan to focus on that with other sub-fields on the side. Still in school so still busy studying.</p>
+        <footer>
+            <button id="background_control" title="Pause/Play the background video" onclick="ns['toggleVideo']();">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+            <a href="https://www.youtube.com/watch?v=ME_eL7wkI84&ab_channel=GradNC" title="[Redirect] Background video source">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </footer>
+    </main>
+    <video src="./assets/sitebg-720.mp4" type="video/mp4" autoplay loop muted id="video"></video>
+    <div id="cursor" draggable="false"></div>
+    <script src="./javascript/cursor.script.js" type="text/javascript"></script>
+    <script src="./javascript/index.site.js" type="text/javascript"></script>
+</body>
+</html>

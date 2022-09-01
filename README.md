@@ -1,0 +1,1 @@
+highly inspired by https://traurige.dev/, go check her out!

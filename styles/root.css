@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+html {
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+
+body {
+    background-color: #111;
+}
+
+video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    z-index: -1;
+    transition: filter 250ms linear;
+    filter: brightness(0.5) blur(5px);
+}
+
+div#cursor {
+    position: fixed;
+    width: 2vmax;
+    height: 2vmax;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    border-radius: 50%;
+    /*          v (100ms for the best anim, 75ms for a mix, 50ms for responsive, 0ms if you want to use dev tools 😂) */
+    transition: 0ms linear, transform 350ms cubic-bezier(0.33, 1, 0.68, 1), border 250ms linear;
+    transition-property: top left;
+    z-index: 4;
+    pointer-events: none;
+}
+
+div#cursor.cursor-hidden {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+div#cursor.cursor-ripple {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+div#cursor.cursor-hover {
+    border: 3px solid #a29bfe;
+}
+
+a {
+    color: inherit;
+    transition: color 250ms linear;
+}
+
+a:hover, a:focus {
+    color: #6c5ce7;
+}
